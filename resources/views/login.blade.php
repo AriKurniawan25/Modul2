@@ -23,7 +23,8 @@
                             <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
                             <label for="floatingPassword">Password</label>
                         </div>
-                        <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Sign in</button>
+                        <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Login</button>
+                        <a href="{{ route('data') }}" class="w-100 btn btn-lg btn-success mt-3">Cek CRUD</a>
                     </form>
                 </div>
             </div>

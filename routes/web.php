@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,5 @@ Route::get('/', function () {
 });
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
+
+Route::get('data', [TestController::class, 'index'])->name('data');
