@@ -26,14 +26,14 @@
                             </div>
                             <div>
                                 <label for="kehadiran">Kehadiran</label>
-                                <select class="form-control" name="keadiran" id="kehadiran">
+                                <select class="form-control" name="kehadiran" id="kehadiran" type="text">
                                     <option value="Hadir" @if ($edit->kehadiran == 'Hadir') selected @endif>Hadir</option>
                                     <option value="Tidak Hadir" @if ($edit->kehadiran == 'Tidak Hadir') selected @endif>Tidak Hadir</option>
                                 </select>
                             </div>
                             <div>
                                 <label for="keterangan">Keterangan</label>
-                                <select class="form-control" name="keadiran" id="keterangan">
+                                <select class="form-control" name="keterangan" id="keterangan" type="text">
                                     <option value="-" @if ($edit->keterangan == '-') selected @endif>-</option>
                                     <option value="Alpa" @if ($edit->keterangan == 'Alpa') selected @endif>Alpa</option>
                                     <option value="Izin" @if ($edit->keterangan == 'Izin') selected @endif>Izin</option>

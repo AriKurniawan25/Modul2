@@ -26,14 +26,14 @@
                             </div>
                             <div>
                                 <label for="kehadiran">Kehadiran</label>
-                                <select class="form-control" name="keadiran" id="kehadiran">
+                                <select class="form-control" name="kehadiran" id="kehadiran" type="text">
                                     <option value="Hadir">Hadir</option>
                                     <option value="Tidak Hadir">Tidak Hadir</option>
                                 </select>
                             </div>
                             <div>
                                 <label for="keterangan">Keterangan</label>
-                                <select class="form-control" name="keadiran" id="keterangan">
+                                <select class="form-control" name="keterangan" id="keterangan" type="text">
                                     <option value="-">-</option>
                                     <option value="Alpa">Alpa</option>
                                     <option value="Izin">Izin</option>

@@ -36,8 +36,8 @@ class TestController extends Controller
      */
     public function store(Request $request)
     {
-        Crud::store($request->all());
-        return view('data');
+        Crud::create($request->all());
+        return redirect('data');
     }
 
     /**
