@@ -21,4 +21,12 @@ Route::get('/', function () {
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 
-Route::get('data', [TestController::class, 'index'])->name('data');
+Route::get('/data', [TestController::class, 'index'])->name('data');
+
+Route::get('/form', [TestController::class, 'create'])->name('form');
+Route::post('/form', [TestController::class, 'store'])->name('formsend');
+
+Route::get('/edit/{id}', [TestController::class, 'edit']);
+Route::post('/edit/{id}', [TestController::class, 'update']);
+
+Route::get('/hapus/{id}', [TestController::class, 'destroy'])->name('hapus');

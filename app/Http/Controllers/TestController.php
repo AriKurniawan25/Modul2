@@ -25,7 +25,7 @@ class TestController extends Controller
      */
     public function create()
     {
-        //
+        return view('form');
     }
 
     /**
@@ -36,7 +36,8 @@ class TestController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Crud::store($request->all());
+        return view('data');
     }
 
     /**
@@ -47,7 +48,7 @@ class TestController extends Controller
      */
     public function show($id)
     {
-        //
+       //
     }
 
     /**
@@ -58,7 +59,8 @@ class TestController extends Controller
      */
     public function edit($id)
     {
-        //
+        $edit=Crud::find($id);
+        return view('edit',['edit'=>$edit]);
     }
 
     /**
@@ -70,7 +72,9 @@ class TestController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $update = Crud::find($id);
+        $update->update($request->all());
+        return redirect('data');
     }
 
     /**
@@ -81,6 +85,8 @@ class TestController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $hapus = Crud::find($id);
+        $hapus->delete($hapus);
+        return redirect('data');
     }
 }
